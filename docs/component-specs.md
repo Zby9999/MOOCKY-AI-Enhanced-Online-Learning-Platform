@@ -1,4 +1,4 @@
-# MOOCKY Component Specs
+# Lumen Atlas Component Specs
 
 ## Rules of Use
 
@@ -10,6 +10,9 @@
 - All rounded component containers must use `60%` corner smoothing.
 - Regular component radii are limited to `16px`, `8px`, and `pill`; any other radius must be documented as a special case.
 - All icons must come from Lucide. The default icon spec is `16px` size with `1.5px` stroke; other sizes or strokes are special cases.
+- Components must not use shadows by default.
+- When a component sits directly over a complex gradient, image, or media background, use a translucent surface plus `8px` backdrop blur instead of a drop shadow.
+- Translucent blur layering is for foreground controls and compact overlays only; normal quiet surfaces should use surface, border, and spacing.
 
 ## LogoLockup
 
@@ -81,6 +84,7 @@ Provide the single globally unified action family across MOOCKY.
 
 - Use the same button family in marketing and learning surfaces.
 - Express page differences through variant and context, not separate button systems.
+- When a button or compact button-like foreground control sits on complex media or gradient art, it may use translucent background plus `8px` backdrop blur and must still avoid drop shadow.
 
 ### Prohibited Uses
 

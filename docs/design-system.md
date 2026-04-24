@@ -1,8 +1,8 @@
-# MOOCKY Design System
+# Lumen Atlas Design System
 
 ## Authority
 
-This document is the single source of truth for the MOOCKY design system.
+This document is the single source of truth for Lumen Atlas, the MOOCKY design system.
 
 - If this document conflicts with [`component-specs.md`](./component-specs.md), this document wins.
 - [`tokens.json`](../tokens.json) is the machine-readable expression of the rules defined here.
@@ -22,10 +22,15 @@ This system is grounded in the following confirmed Figma evidence:
 - Gradient asset library sample: `173:1582`
 - Confirmed conversation decisions captured after the audit
 
-Only these six page nodes plus the approved gradient appendix may be used as system evidence.
+Only these six page nodes plus the approved gradient appendix and explicitly confirmed focused references may be used as system evidence.
 
 - Other frames in the same Figma file are exploratory and non-authoritative by default.
 - They must not be used to infer new rules unless the user explicitly approves them later.
+
+Focused references are narrow by definition:
+
+- Node `74:594` is approved only as evidence for the translucent foreground surface plus `8px` backdrop blur strategy over complex gradient/media backgrounds.
+- It must not be used to infer unrelated typography, color, radius, layout, or component-system rules.
 
 This document defines:
 
@@ -39,6 +44,8 @@ This document does not invent full-page patterns for screens that have not been 
 
 ### Canonical Identity
 
+- Design system name must be written as `Lumen Atlas`.
+- `Lumen Atlas` names the design system, not the learner-facing product brand.
 - Brand name must be written as `MOOCKY`.
 - The canonical logo is the `MOOCKY` wordmark plus the sparkle mark as a single lockup.
 - The sparkle mark must not be detached and used as a replacement logo.
@@ -101,7 +108,7 @@ Editorial type must not become the default style for dense product UI, system la
 - `canvas` is warm off-white.
 - `surface` is white or near-white.
 - `border` is subtle and semi-transparent.
-- `shadow` is minimal or absent except where tonal depth is intentional.
+- `shadow` is absent by default and only appears as an explicitly documented special case.
 
 #### Dark Theme
 
@@ -251,9 +258,23 @@ No other font family is permitted in the design system.
 
 #### Shadow
 
-- Light theme defaults to minimal shadow use.
+- Normal surfaces must not use shadows by default.
+- Light theme defaults to no shadow use unless a special case is explicitly documented.
 - Approved dark frames rely on surface contrast and borders before shadow depth.
 - Shadows must never substitute for spacing or hierarchy.
+- Future prototypes must not add ambient card, button, rail, panel, input, or control shadows as a default layer strategy.
+
+#### Translucent Blur Layering
+
+When a foreground component needs legibility and depth over complex gradient, image, or media backgrounds, use a translucent surface plus background blur instead of a shadow.
+
+- The confirmed strategy is a translucent component background with `8px` backdrop blur and no drop shadow.
+- Use this for foreground controls, floating buttons, compact labels, and media/gradient overlays that sit directly on visually complex backgrounds.
+- In light theme, prefer existing translucent surface roles such as `surface.overlay` or `surface.frost` before adding new color tokens.
+- Do not use translucent blur as generic decoration on normal quiet surfaces.
+- Do not use it to turn dense utility UI into glass panels.
+- If the component is not in front of a complex background, prefer a normal surface, border, and spacing.
+- Dark-theme translucent blur values must come from approved dark evidence or be recorded as a gap.
 
 ## Layout System
 
@@ -395,6 +416,7 @@ For future collaboration:
 - new patterns remain provisional until confirmed
 - the system grows by promotion, not by assumption
 - dark-mode conclusions must come from approved dark reference frames only
+- prototypes should use no shadows by default and use translucent `8px` backdrop-blur foreground surfaces only when needed over complex backgrounds
 
 ## Open Questions
 

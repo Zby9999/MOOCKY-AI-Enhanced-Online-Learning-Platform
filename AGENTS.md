@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This file gives Codex execution rules for the MOOCKY design system. It is not a restatement of the full system.
+This file gives Codex execution rules for Lumen Atlas, the MOOCKY design system. It is not a restatement of the full system.
 
 ## Source Priority
 
@@ -33,6 +33,11 @@ Only the following Figma nodes are approved as system evidence:
 - `173:1582`
 
 If a node is outside this whitelist, treat it as exploratory and non-authoritative unless the user explicitly approves it later.
+
+Focused supporting references:
+
+- `74:594` is approved only for the translucent foreground surface plus `8px` backdrop blur strategy over complex gradient/media backgrounds.
+- Do not use `74:594` to infer unrelated typography, color, radius, layout, or component rules.
 
 ## Working With New Wireframes
 
@@ -73,6 +78,16 @@ When the user provides a new wireframe:
 - Use Lucide for all icons: https://lucide.dev and https://github.com/lucide-icons/lucide.
 - Default icons are `16px` with `1.5px` stroke.
 - Treat any other icon size or stroke width as a special case tied to a confirmed component need.
+
+## Shadow And Blur Rules
+
+- Use no shadows by default in generated prototypes and implementation.
+- Do not add ambient card, button, rail, panel, input, or control shadows as a normal depth strategy.
+- Use borders, spacing, surface contrast, and typography before considering any shadow.
+- When foreground controls sit over complex gradient, image, or media backgrounds, use a translucent component background plus `8px` backdrop blur instead of a shadow.
+- Translucent blur layering is for foreground controls, compact overlays, floating buttons, and labels on complex backgrounds.
+- Do not use translucent blur as generic decoration on quiet surfaces or dense utility UI.
+- Document any actual shadow as a special case before using it.
 
 ## Gradient Rules
 

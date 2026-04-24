@@ -3,6 +3,7 @@
 ## 1. 当前目标
 
 - [已确认] 当前项目是设计一个 AI 赋能在线学习网站，品牌名为 `MOOCKY`。
+- [已确认] 当前设计系统正式命名为 `Lumen Atlas`；它是 MOOCKY 的设计系统名称，不替代产品品牌名。
 - [已确认] 当前阶段重点是建立完整、可复用、可继续扩展的设计系统。
 - [已确认] 设计系统需要服务后续流程：用户提供具体页面线框图，Codex 基于已确认系统规则产出可用高保真设计。
 - [已确认] 本地 `docs/design-system.md` 是设计系统唯一事实来源；Figma Design Doc 是视觉沟通层，不替代源文档。
@@ -10,6 +11,7 @@
 ## 2. 已确认事实
 
 - [已确认] 品牌标准写法是 `MOOCKY`，logo 由 wordmark 和 sparkle 星标组成。
+- [已确认] 设计系统标准写法是 `Lumen Atlas`。
 - [已确认] Figma 文件 key 是 `hoN23Dj67OVv6D0drKYY24`。
 - [已确认] 可作为系统证据的 Figma 节点仅包括：`42:93`、`60:551`、`100:3535`、`180:1596`、`180:1831`、`180:1880`、`173:1582`。
 - [已确认] 其中 light evidence 是 `42:93` Landing、`60:551` 课程暂停页、`100:3535` 课程播放页。
@@ -36,6 +38,9 @@
 - [已确认] 系统中只允许出现 `Cormorant Infant`、`Gayathri`、`DM Serif Text`、`Geist` 四种字体。原因：防止视觉语言混杂。
 - [已确认] 常规圆角只有 `16px`、`8px`、`pill`，所有圆角使用 `60%` corner smoothing。原因：保持柔和几何的一致性。
 - [已确认] 所有 icon 必须来自 Lucide，默认 `16px`、`1.5px` stroke。原因：统一图标来源和产品扫描感。
+- [已确认] 阴影策略需要极其克制：正常情况下不使用任何阴影效果，后续原型生成也不得默认给卡片、按钮、面板、rail、输入框增加阴影。原因：保持 MOOCKY 的低 chrome、安静层级。
+- [已确认] 在复杂渐变、图片或媒体背景前，为了增加层次感，使用透明/半透明组件背景加 `8px` 背景模糊，而不是 drop shadow。Figma 节点 `74:594` 仅作为这一策略的聚焦参考，不作为其它系统规则证据。
+- [已确认] 设计系统正式命名为 `Lumen Atlas`。原因：为 MOOCKY 的视觉与组件规范建立可被引用、可传播的系统名称。
 - [已确认] 未来 wireframe 到高保真的扩展流程应先复用系统，缺失模式标记为 `Proposed Pattern` 或 `Open Question`，不能直接提升为全站规则。原因：避免单页偶然样式污染系统。
 
 ## 4. 约束与偏好
@@ -52,6 +57,7 @@
 - [已确认] 后续页面设计应沿用 MOOCKY 自身视觉语言，不做通用企业文档模板或默认 UI 风格。
 - [已确认] 核心标题不得混用非确认字体，也不得把完整 Display 标题改成纯 `DM Serif Text`、纯 `Cormorant Infant` 或纯 `Gayathri`。
 - [已确认] 非 `16px / 8px / pill` 的圆角、非 `16px / 1.5px` 的 icon 规格，都必须作为特殊情况记录。
+- [已确认] 阴影不是默认层级工具；复杂背景前的前景控制组件优先使用半透明背景与 `8px` backdrop blur。
 
 ## 5. 未完成事项
 
@@ -59,12 +65,10 @@
 - [已确认] 高优先级：继续补全真实页面中的组件状态，尤其 hover、pressed、focus、loading、error、responsive collapse 等尚未完全确认状态。
 - [已确认] 中优先级：继续扩展 gradient asset library，但当前不得假定 v1 之外的完整资产族。
 - [已确认] 中优先级：在后续页面中验证 dark mode 组件状态，不得从未批准 frame 推断。
-- [待确认] 中优先级：是否为设计系统正式命名，以及最终采用哪个名字。
 - [待确认] 低优先级：是否需要把 Figma Design Doc 进一步做成可发布的团队 presentation / handoff 页面。
 
 ## 6. 待确认问题
 
-- [待确认] 设计系统名称尚未确认；本线程中仅建议过 `MOOCKY Atlas`、`Lumen Atlas`、`Softgrid`、`Waymark` 等方向。
 - [待确认] 未来完整 gradient family 的数量、命名、使用场景和资产清单尚未补全。
 - [待确认] 移动端 header collapse、课程页 rail 移动端呈现、导航结构等 responsive 细节仍未最终确认。
 - [待确认] Button 各 variant 在 hover / pressed / focus-visible / disabled / loading 下的精确视觉差异仍需补证据。
