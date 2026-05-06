@@ -41,7 +41,7 @@
 - [已确认] 最新稳定预览地址是 `https://moocky-frontend-engineering-shell.vercel.app/`；最新 production deployment 是 `https://moocky-frontend-engineering-shell-je1x77hfh.vercel.app/`。
 - [已确认] Vercel deployment `dpl_E8dhBPzXFA3HPSgPMrAxryUZG4bp` 状态为 `READY`，target 为 `production`。
 - [已确认] Portfolio 评价标准来自 `Project Portfolio Doc/Portfolio-assessment.pdf`：PDF 提交，推荐 6-10 页 A4，约 1000 words，最多 2000 words；需要强调 design/research methods、过程、迭代、用户反馈、rationale、视觉证据和简洁标注。
-- [已确认] Portfolio 本地参考文件包括：`Portfolio-assessment.pdf`、`Brown Minimalist Aesthetic Presentation.pdf`、`GPT-Conversation-memory.md` 和 Portfolio 专用 `AGENTS.md`。
+- [已确认] Portfolio 本地参考文件包括：`Portfolio-assessment.pdf`、`Brown Minimalist Aesthetic Presentation.pdf` 和 Portfolio 专用 `AGENTS.md`。
 - [已确认] 演讲稿共识：MOOCKY 是 AI-scaffolded / AI-centered online learning system，面向使用在线学习平台的年轻用户，解决 engagement 和 learning efficiency 问题；方案包含 AI chatbot、个性化课程推荐、AI 辅助笔记、讨论/共享笔记、虚拟助教和临时学习小组等。
 - [已确认] Portfolio 项目简介推荐聚焦 AI 中心化：MOOCKY 将用户熟悉的 AI chatbot 交互移植到课程学习中，帮助用户找课、提问、获得个性化学习指导并提升学习效率。
 - [已确认] Portfolio research 证据来自三个 FigJam board：原始采访 `SXtAiKNqbE9Y1uAaPe7CuL`，Empathy Map `a5giPzmsHQboZDCttuyM65`，Persona `6tG9QfhDFLS43CAVjDYpSk`。
@@ -126,7 +126,7 @@
 - [已确认] Portfolio 插图使用固定抽象 editorial 风格：`#F7F7F7` 平背景、低饱和 clay brown / dusty blue / pale peach / sage green / soft coral、手绘感、无文字、无 logo、无阴影、适合 A4 文档旁图。
 - [已确认] 文档助手模式下不得夸大 AI agent 的贡献；应表述为用户主导、AI 协作、由多份 Markdown/设计系统规则约束的实验性原型方法，并区分 confirmed evidence、interpretation 和 future opportunity。
 - [已确认] `Recursive Protocol-Guided Agentic Prototyping` 的叙事重点是：多层 Markdown 协议引导 AI agent；agent 在设计证据、规则、代码、验证反馈和项目记忆之间递归循环；原型与设计系统共同演化。
-- [已确认] 论文级方法记录文档最终提交语言为英文；需要提供 GitHub 直达 Markdown 文件链接，并最终导出为 DOCX。
+- [已确认] 论文级方法记录文档最终提交语言为英文；协作与叙事中心是本地 DOCX，不再为该叙事新增或上传 GitHub Markdown 文档。GitHub 仅用于引用已有仓库、已有旧文档和部署 demo 地址。
 
 ## 5. 未完成事项
 
@@ -167,10 +167,8 @@
 - [已确认] `tokens.json`：机器可读 tokens，包含语义色、字体、spacing、radius、icon、layout、gradient 等结构。
 - [已确认] `AGENTS.md`：Codex 执行规则，包含证据白名单、dark mode、字体、圆角、Lucide icon、gradient 等约束。
 - [已确认] `docs/design-system-audit.md`：早期高保真页面审计记录，不作为规范权威。
-- [已确认] `docs/ai-agent-prototype-method-record.md`：论文级方法记录文档母稿，记录 MOOCKY 从 Hi-Fi Figma 图到完整 demo 网站的 AI-agent-assisted prototyping 方法。
-- [已确认] 论文级方法记录文档只需要在正文中提供特定 md 文件的 GitHub 直达链接：`https://github.com/Zby9999/MOOCKY-AI-Enhanced-Online-Learning-Platform/blob/main/docs/ai-agent-prototype-method-record.md`；这不是新建链接或单独 GitHub 发布任务。
-- [已确认] 论文级方法记录文档计划 DOCX 输出路径为 `output/doc/ai-agent-prototype-method-record.docx`。
 - [已确认] 论文级文档协作已单独建立项目根目录文件夹 `Recursive_Protocol_Document/`；后续中文初稿、用户手改版、英文版和最终导出优先放在该文件夹下。
+- [已确认] 当前中心稿件为 `Recursive_Protocol_Document/drafts/rpgap_zh_v1.docx`；不要把叙事拆散到新增 Markdown 文件中。
 - [已确认] Figma 页面 `155:1557 Design Doc`：视觉设计文档页面。
 - [已确认] Figma 文档板包括 `00 Cover & Authority`、`01 Brand & Principles`、`02 Foundations`、`03 Theme System`、`04 Page Archetypes`、`05 Component System`、`06 AI Capability + Extension Protocol + Open Questions`、`07 Gradient Appendix Reference`。
 - [已确认] Figma `02 Foundations` 已更新：放大 Display Title Pair、加入 `16 / 8 / pill + 60% smoothing`、加入 Lucide icon 规则、优化 spacing / padding。
@@ -186,7 +184,6 @@
 - [已确认] `Project Portfolio Doc/AGENTS.md`：Portfolio 专用 agent 文件，记录评价标准、素材来源、页面结构、method 提醒、证据选择、写作规则、插图风格和质量检查清单。
 - [已确认] `Project Portfolio Doc/Portfolio-assessment.pdf`：Portfolio 评价标准。
 - [已确认] `Project Portfolio Doc/Brown Minimalist Aesthetic Presentation.pdf`：最终演讲稿，可作为项目共识来源。
-- [已确认] `Project Portfolio Doc/GPT-Conversation-memory.md`：GPT 交流回顾，可作为前期设计 Codex 协作系统的过程证据。
 - [已确认] `Project Portfolio Doc/assets/page-01-user-research-source-chromakey.png` 与 `Project Portfolio Doc/assets/page-01-user-research-transparent.png`：Page 1 User Research Findings 相关插图资产。
 - [已确认] FigJam 原始采访 board：`https://www.figma.com/board/SXtAiKNqbE9Y1uAaPe7CuL/Design-Thinking-Course-Project?node-id=0-1&t=kaxFk9Nf0djxFquX-1`。
 - [已确认] FigJam Empathy Map board：`https://www.figma.com/board/a5giPzmsHQboZDCttuyM65/Empathy-map---Yupu--Weiqi--Bingyi?node-id=0-1&t=MFu0HaQU7qAWZGBJ-1`。
@@ -206,4 +203,4 @@
 - [已确认] 如果继续 Page 1 / Page 2 research 内容，优先使用 FigJam 原话和局部截图支撑 findings，不要只写抽象总结。
 - [已确认] 如果继续 Design Opportunity，使用已确认 HMW 句子、三条设计目标和 `How Might We framing` method 标签。
 - [已确认] 如果用户要求插图，沿用 Portfolio 固定抽象 editorial 风格；如需纳入项目文件夹，复制到 `Project Portfolio Doc/assets/` 并保留生成图原件。
-- [已确认] 如果用户说“文档助手”，先打开 `docs/ai-agent-prototype-method-record.md` 和 `memory.md`，然后以论文级记录文档协作模式继续：先整理叙事结构和证据，再扩写正文，最后打磨教授可读版。
+- [已确认] 如果用户说“文档助手”，先打开 `Recursive_Protocol_Document/drafts/rpgap_zh_v1.docx` 和 `memory.md`，然后以 DOCX 为中心继续：读用户手改版、按大方向修订中文稿，最后再转换英文并微调用词。
