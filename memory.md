@@ -7,6 +7,11 @@
 - [已确认] 当前阶段重点是建立完整、可复用、可继续扩展的设计系统。
 - [已确认] 当前最新完成页面是 `MyProgress` 正式页面，已接入 Landing Page 登录后的 Navi Bar `MyProgress` 入口，并已部署到稳定 Vercel 地址。
 - [已确认] 当前正在制作课程详情页 `/course`，课程名固定为 `Neural Architecture`，小标题为 `Transformers & Attention`。
+- [已确认] 当前同时开始制作课程提交用 Project Portfolio 记录文档，位置为 `Project Portfolio Doc/`。
+- [已确认] 当前新增一条论文级方法记录文档目标：记录从几张 Hi-Fi Figma 图到完整 demo 网站的 AI-agent-assisted prototyping 过程，用于发给教授寻求落地或科研机会。
+- [已确认] 该工作流正式命名为 `Recursive Protocol-Guided Agentic Prototyping`；缩写暂不强制使用，后续文档中可先使用全称。
+- [已确认] 论文级方法记录文档目标读者为香港城市大学创意媒体学院 Professor Can Liu。
+- [已确认] Portfolio 当前已完成前期规划：第 0 部分为 Cover / Project Summary；第 1 部分扩展为两页研究内容；下一步正在推进 `Design Opportunity` section。
 - [已确认] 设计系统需要服务后续流程：用户提供具体页面线框图，Codex 基于已确认系统规则产出可用高保真设计。
 - [已确认] 本地 `docs/design-system.md` 是设计系统唯一事实来源；Figma Design Doc 是视觉沟通层，不替代源文档。
 
@@ -35,6 +40,14 @@
 - [已确认] 课程详情页的正式进入方式是从 `MyProgress` 页面点击 `Continue learning` 进入；它不是独立营销入口。
 - [已确认] 最新稳定预览地址是 `https://moocky-frontend-engineering-shell.vercel.app/`；最新 production deployment 是 `https://moocky-frontend-engineering-shell-je1x77hfh.vercel.app/`。
 - [已确认] Vercel deployment `dpl_E8dhBPzXFA3HPSgPMrAxryUZG4bp` 状态为 `READY`，target 为 `production`。
+- [已确认] Portfolio 评价标准来自 `Project Portfolio Doc/Portfolio-assessment.pdf`：PDF 提交，推荐 6-10 页 A4，约 1000 words，最多 2000 words；需要强调 design/research methods、过程、迭代、用户反馈、rationale、视觉证据和简洁标注。
+- [已确认] Portfolio 本地参考文件包括：`Portfolio-assessment.pdf`、`Brown Minimalist Aesthetic Presentation.pdf`、`GPT-Conversation-memory.md` 和 Portfolio 专用 `AGENTS.md`。
+- [已确认] 演讲稿共识：MOOCKY 是 AI-scaffolded / AI-centered online learning system，面向使用在线学习平台的年轻用户，解决 engagement 和 learning efficiency 问题；方案包含 AI chatbot、个性化课程推荐、AI 辅助笔记、讨论/共享笔记、虚拟助教和临时学习小组等。
+- [已确认] Portfolio 项目简介推荐聚焦 AI 中心化：MOOCKY 将用户熟悉的 AI chatbot 交互移植到课程学习中，帮助用户找课、提问、获得个性化学习指导并提升学习效率。
+- [已确认] Portfolio research 证据来自三个 FigJam board：原始采访 `SXtAiKNqbE9Y1uAaPe7CuL`，Empathy Map `a5giPzmsHQboZDCttuyM65`，Persona `6tG9QfhDFLS43CAVjDYpSk`。
+- [已确认] 原始采访 findings：在线学习连接感弱；讨论区常被当作参考而非社区；学习者已习惯使用 ChatGPT/Gemini/Google 等外部 AI 或搜索工具；用户偏好可主动点击的 AI 帮助，不喜欢自动弹窗打断思路。
+- [已确认] 关键研究 insight：学习者并不只是需要更多社交功能，而是需要及时、懂课程上下文、可控且不打断学习流的 AI 支持。
+- [已确认] Empathy Map / Persona synthesis：目标用户倾向独立、高效率、AI-familiar；他们抗拒低效或有压力的强制社交，但需要快速精准帮助、有效信息过滤、课程上下文支持和低压力参考他人思路的方式。
 
 ## 3. 关键决策
 
@@ -78,6 +91,14 @@
 - [已确认] MyProgress 页面自身也必须使用登录态 Navi Bar：右侧包含 header search、Notifications、MOOCKY coins、theme preview toggle、profile action；不得显示访客态 `Log In` / `Explore MOOCKY`。
 - [已确认] MyProgress 中间四个大字数据记录为 `DataPanelMetricValue` 特殊用法，可使用 `Geist Semibold 32px / 40px`。原因：它们是可扫描的数据值，不是普通 Geist 大标题。
 - [已确认] 课程详情页 `/course` 的入口文案在 MyProgress 中应使用 `Continue learning`，并保持链接到 `/course`。原因：演示路径需要从学习进度页自然进入当前课程。
+- [已确认] Portfolio 专用 agent 规则已写入 `Project Portfolio Doc/AGENTS.md`。原因：之后讨论 Portfolio 时需要自动遵守评价标准、结构、method 提醒、证据选择和写作规则。
+- [已确认] Portfolio 默认结构确认为 8-10 页：Cover / Project Summary、Problem & User Insight、Design Opportunity、Early Concepts / Alternatives、User Flow / Storyboard、Wireframe / Interaction Iteration、High-fidelity Prototype、Evaluation & Feedback、Refinement Evidence、Reflection & Next Steps。
+- [已确认] Portfolio 第 1 部分扩展为两页：Page 1 `User Research Findings`，Page 2 `Empathy Map & Persona Synthesis`。原因：研究材料较多，拆成 raw interview findings 与 synthesis 更能体现 design/research process。
+- [已确认] Portfolio 协作规则新增 method 提醒：每个页面或 artefact 都要尽量标注 Method、Purpose、Output、Design impact。原因：评价标准明确重视 design and research methods 的应用。
+- [已确认] Design Opportunity section 使用 `How Might We framing`：`How might we bring familiar AI interactions into online courses, so learners can receive timely, course-aware support without being forced into distracting or uncomfortable social interactions?` 原因：它把研究发现转译成 AI-centered 设计机会。
+- [已确认] Design Opportunity 的设计目标为：course-aware AI support、user-controlled assistance、low-pressure learning connection。原因：对应研究中的课程上下文、可控 AI 帮助、抗拒强制社交等发现。
+- [已确认] 用户说“文档助手”时，Codex 应自动切换到论文级记录文档协作模式。原因：该模式聚焦研究叙事、证据链、方法论命名、教授可读性和可发送版本打磨，而不是普通产品文案或代码实现。
+- [已确认] 面向 Professor Can Liu 的版本应更像 HCI research memo，而不是普通产品作品集。原因：公开资料显示其研究关注 future interfaces、empirical understanding of human cognition/behavior、AI-assisted input、multimodal interaction、collaborative interaction 和 real-world context。
 
 ## 4. 约束与偏好
 
@@ -98,6 +119,14 @@
 - [已确认] 阴影不是默认层级工具；复杂背景前的前景控制组件优先使用半透明背景与 `8px` backdrop blur。
 - [已确认] Figma Button 组件命名采用 API 风格 `Button/<Purpose>/<Theme>`；variant 命名为 `State=Default` 和 `State=Hover`。
 - [已确认] `newsletterCompound` 实现时 input hover 与主按钮 hover 需要分开，但当前 Figma 组件库不新增拆分 variant，只在规则中说明。
+- [已确认] Portfolio 写作必须优先展示“证据链”，不是产品宣传：raw data / method / finding / rationale / design impact 需要清楚连接。
+- [已确认] Portfolio 中可直接引用 FigJam 原话，但每个 finding 不宜放太多 quote；每条 finding 选 1 条最强证据更适合页面可读性。
+- [已确认] Portfolio 不得编造采访对象、用户原话、测试人数、日期、反馈或 artefact；不确定内容标注 `[待确认]`。
+- [已确认] Portfolio 帮助中需要主动提醒可用方法名称，例如 semi-structured interviews、interview guide / research protocol、scenario-based concept testing、qualitative coding / thematic analysis、empathy mapping、persona development、How Might We framing、wireframing、prototyping、user evaluation、iterative refinement、design-system documentation。
+- [已确认] Portfolio 插图使用固定抽象 editorial 风格：`#F7F7F7` 平背景、低饱和 clay brown / dusty blue / pale peach / sage green / soft coral、手绘感、无文字、无 logo、无阴影、适合 A4 文档旁图。
+- [已确认] 文档助手模式下不得夸大 AI agent 的贡献；应表述为用户主导、AI 协作、由多份 Markdown/设计系统规则约束的实验性原型方法，并区分 confirmed evidence、interpretation 和 future opportunity。
+- [已确认] `Recursive Protocol-Guided Agentic Prototyping` 的叙事重点是：多层 Markdown 协议引导 AI agent；agent 在设计证据、规则、代码、验证反馈和项目记忆之间递归循环；原型与设计系统共同演化。
+- [已确认] 论文级方法记录文档最终提交语言为英文；需要提供 GitHub 直达 Markdown 文件链接，并最终导出为 DOCX。
 
 ## 5. 未完成事项
 
@@ -108,6 +137,11 @@
 - [已确认] 中优先级：在后续页面中验证 dark mode 组件状态，不得从未批准 frame 推断。
 - [待确认] 低优先级：是否需要把 Figma Design Doc 进一步做成可发布的团队 presentation / handoff 页面。
 - [待确认] MyProgress 最终登录态鉴权流程如何接入。
+- [已确认] Portfolio 高优先级：继续完成 `Design Opportunity` section 的最终页面文案、方法标注、截图/插图搭配。
+- [已确认] Portfolio 高优先级：从 FigJam 中截取第二页最合适的局部证据，而不是整张大图；优先使用 Empathy Map 的 Pain/Gain 区域和 Shirley / Jack persona 局部。
+- [已确认] Portfolio 高优先级：为 Page 1 `User Research Findings`、Page 2 `Empathy Map & Persona Synthesis` 和 `Design Opportunity` 保持清晰的 method 标签与简短 annotation。
+- [已确认] Portfolio 中优先级：继续推进 Early Concepts / Alternatives、User Flow / Storyboard、Wireframe / Interaction Iteration、Hi-fi Prototype、Evaluation / Feedback、Refinement、Reflection 等后续页面。
+- [已确认] 论文级方法记录文档高优先级：继续补充项目背景、方法流程、关键证据、实验性贡献、局限性、教授邮件摘要和潜在科研/落地方向。
 
 ## 6. 待确认问题
 
@@ -119,6 +153,11 @@
 - [待确认] 是否需要未来更轻量的 product footer pattern 尚未确认。
 - [待确认] 非默认 icon size / stroke 的特殊规格有哪些，目前只确认默认规则。
 - [待确认] 本机终端 `curl` 访问 Vercel 域名可能超时；本次部署通过 Vercel Inspect 确认 READY，并通过外部网页抓取确认稳定首页可打开，但后续仍应尽量完成稳定 URL 的 `200 OK` 检查。
+- [待确认] Portfolio 最终提交语言、版式工具和每页最终字数分配尚未确认。
+- [待确认] Portfolio 是否使用所有生成插图、是否需要把后续生成图统一复制到 `Project Portfolio Doc/assets/` 尚未确认。
+- [待确认] Portfolio Page 2 最终截取哪些 FigJam 局部、是否需要重新排版或清理 FigJam 片段尚未确认。
+- [待确认] Portfolio 是否需要补一次小规模 peer/user feedback 来强化 evaluation evidence 尚未确认。
+- [待确认] 论文级方法记录文档的发送场景、篇幅、引用格式、是否需要补充图片证据和是否需要邮件正文同步版本尚未确认。
 
 ## 7. 相关产物与文件
 
@@ -128,6 +167,10 @@
 - [已确认] `tokens.json`：机器可读 tokens，包含语义色、字体、spacing、radius、icon、layout、gradient 等结构。
 - [已确认] `AGENTS.md`：Codex 执行规则，包含证据白名单、dark mode、字体、圆角、Lucide icon、gradient 等约束。
 - [已确认] `docs/design-system-audit.md`：早期高保真页面审计记录，不作为规范权威。
+- [已确认] `docs/ai-agent-prototype-method-record.md`：论文级方法记录文档母稿，记录 MOOCKY 从 Hi-Fi Figma 图到完整 demo 网站的 AI-agent-assisted prototyping 方法。
+- [已确认] 论文级方法记录文档只需要在正文中提供特定 md 文件的 GitHub 直达链接：`https://github.com/Zby9999/MOOCKY-AI-Enhanced-Online-Learning-Platform/blob/main/docs/ai-agent-prototype-method-record.md`；这不是新建链接或单独 GitHub 发布任务。
+- [已确认] 论文级方法记录文档计划 DOCX 输出路径为 `output/doc/ai-agent-prototype-method-record.docx`。
+- [已确认] 论文级文档协作已单独建立项目根目录文件夹 `Recursive_Protocol_Document/`；后续中文初稿、用户手改版、英文版和最终导出优先放在该文件夹下。
 - [已确认] Figma 页面 `155:1557 Design Doc`：视觉设计文档页面。
 - [已确认] Figma 文档板包括 `00 Cover & Authority`、`01 Brand & Principles`、`02 Foundations`、`03 Theme System`、`04 Page Archetypes`、`05 Component System`、`06 AI Capability + Extension Protocol + Open Questions`、`07 Gradient Appendix Reference`。
 - [已确认] Figma `02 Foundations` 已更新：放大 Display Title Pair、加入 `16 / 8 / pill + 60% smoothing`、加入 Lucide icon 规则、优化 spacing / padding。
@@ -140,6 +183,15 @@
 - [已确认] `app/hooks/useRevealOnView.ts`：共享 viewport reveal 运行时，供 Landing 和 MyProgress 复用。
 - [已确认] `app/components/ViewportRevealRuntime.tsx`：在 server route 内挂载 reveal hook 的 client runtime。
 - [已确认] Vercel 生产 AI API 依赖 `docs/ai-system-prompt.md`；`.vercelignore` 必须保留该文件进入部署包，否则 `/api/moocky-ai` 和 `/api/moocky-ai/stream` 会因 `ENOENT` 回退/失败。
+- [已确认] `Project Portfolio Doc/AGENTS.md`：Portfolio 专用 agent 文件，记录评价标准、素材来源、页面结构、method 提醒、证据选择、写作规则、插图风格和质量检查清单。
+- [已确认] `Project Portfolio Doc/Portfolio-assessment.pdf`：Portfolio 评价标准。
+- [已确认] `Project Portfolio Doc/Brown Minimalist Aesthetic Presentation.pdf`：最终演讲稿，可作为项目共识来源。
+- [已确认] `Project Portfolio Doc/GPT-Conversation-memory.md`：GPT 交流回顾，可作为前期设计 Codex 协作系统的过程证据。
+- [已确认] `Project Portfolio Doc/assets/page-01-user-research-source-chromakey.png` 与 `Project Portfolio Doc/assets/page-01-user-research-transparent.png`：Page 1 User Research Findings 相关插图资产。
+- [已确认] FigJam 原始采访 board：`https://www.figma.com/board/SXtAiKNqbE9Y1uAaPe7CuL/Design-Thinking-Course-Project?node-id=0-1&t=kaxFk9Nf0djxFquX-1`。
+- [已确认] FigJam Empathy Map board：`https://www.figma.com/board/a5giPzmsHQboZDCttuyM65/Empathy-map---Yupu--Weiqi--Bingyi?node-id=0-1&t=MFu0HaQU7qAWZGBJ-1`。
+- [已确认] FigJam Persona board：`https://www.figma.com/board/6tG9QfhDFLS43CAVjDYpSk/Group5---Weiqi--Yupu--Bingyi?node-id=0-1&t=otSmSXEenNh5hkNZ-1`。
+- [已确认] Page 2 推荐 FigJam 局部：Empathy Map `9829:368` 下半部分 Pain/Gain，重点 sticky nodes `9829:391`、`9829:392`、`9829:393`、`9829:394`、`9829:396`、`9829:407`；Persona 文件中 Shirley `11553:266` / `11553:314`，Jack `21607:87` / `21607:135`。
 
 ## 8. 下次启动建议
 
@@ -150,3 +202,8 @@
 - [已确认] 如果继续优化 Figma Design Doc，优先保持英文主文档、证据边界、字体白名单、圆角 smoothing、Lucide icon 规则一致。
 - [已确认] 如果用户说“部署预览”，按当前 production preview workflow 执行：先运行 `npm run build`，再运行 `vercel deploy --prod --yes`，然后验证稳定地址 `https://moocky-frontend-engineering-shell.vercel.app/`，最后更新 `AGENTS.md` 的 Latest Prototype Preview 和 `memory.md`。
 - [已确认] 下次继续 MyProgress 时，先打开 `/my-progress` 检查 Landing 登录后入口、viewport reveal、metric group reveal、移动端 header 与 footer 是否仍符合当前设计意图。
+- [已确认] 下次继续 Portfolio 时，先读取 `Project Portfolio Doc/AGENTS.md`，再根据当前页面主动标注 design/research method。
+- [已确认] 如果继续 Page 1 / Page 2 research 内容，优先使用 FigJam 原话和局部截图支撑 findings，不要只写抽象总结。
+- [已确认] 如果继续 Design Opportunity，使用已确认 HMW 句子、三条设计目标和 `How Might We framing` method 标签。
+- [已确认] 如果用户要求插图，沿用 Portfolio 固定抽象 editorial 风格；如需纳入项目文件夹，复制到 `Project Portfolio Doc/assets/` 并保留生成图原件。
+- [已确认] 如果用户说“文档助手”，先打开 `docs/ai-agent-prototype-method-record.md` 和 `memory.md`，然后以论文级记录文档协作模式继续：先整理叙事结构和证据，再扩写正文，最后打磨教授可读版。
